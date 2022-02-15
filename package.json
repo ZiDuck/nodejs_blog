@@ -1,33 +1,37 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "description": "Trang web đầu tiên",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ducducqn123/nodejs_blog.git"
-  },
-  "keywords": [
-    "f8",
-    "blog",
-    "f8",
-    "nodejs",
-    "nodejs"
-  ],
-  "author": "duyduc",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ducducqn123/nodejs_blog/issues"
-  },
-  "homepage": "https://github.com/ducducqn123/nodejs_blog#readme",
-  "dependencies": {
-    "express": "^4.17.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+    "name": "nodejs",
+    "version": "1.0.0",
+    "description": "Trang web đầu tiên",
+    "main": "src\\index.js",
+    "scripts": {
+        "start": "nodemon --inspect src\\index.js",
+        "watch": "node-sass --watch src\\resources\\scss -o src\\public\\css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ducducqn123/nodejs_blog.git"
+    },
+    "keywords": [
+        "f8",
+        "blog",
+        "f8",
+        "nodejs",
+        "nodejs"
+    ],
+    "author": "duyduc",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ducducqn123/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/ducducqn123/nodejs_blog#readme",
+    "dependencies": {
+        "express": "^4.17.2",
+        "express-handlebars": "^6.0.2"
+    },
+    "devDependencies": {
+        "morgan": "^1.10.0",
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.15"
+    }
 }
